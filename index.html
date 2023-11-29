@@ -273,9 +273,14 @@
             <ul class="section-four-list">
                 <li class="section-four-photo">
                     <div class="box-overlay">
-                    <img src="./images/banking.jpg" 
+                        <picture>
+                            <source src="./images/M_banking-1x.jpg 1X, ./images/M_banking-2x.jpg 2x" media="(max-width: 767px)" />
+                            <source src="./images/T_banking-1x.jpg 1x, ./images/T_banking-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source src="./images/D_banking-1x.jpg 1x, ./images/D_banking-2x.jpg 2x"media="(min-width: 1158px)"/>
+                            <img src="./images/banking.jpg"   
                     alt="online"
                     width="360"/>
+                        </picture>
                     <p class="overlay">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>
