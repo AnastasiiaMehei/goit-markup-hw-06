@@ -854,8 +854,10 @@ font-weight: 400;
 a {     text-decoration: none;
 }
 .modal-mobile-menu-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
    margin-bottom: auto;
+   gap: 40px;
 
 }
 .modal-mobile-menu-link {
@@ -882,4 +884,15 @@ a {     text-decoration: none;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    display: flex;
+}
+.social-links-item-svg {
+    width: 40px;
+    height: 40px;
+}
+.modal-mobile-menu-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 48px;
 }
