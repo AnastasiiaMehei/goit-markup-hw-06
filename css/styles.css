@@ -695,17 +695,19 @@ text-align: center;
 .footer-input-form {
     display: flex;
     gap: 24px;
-    height: 24px;
     align-items: center;
 }
 @media (min-width: 1158px) {
     .footer-input-form {
         width: 36px;
+        gap: 16px;
+        height: 24px;
     }
 }
 @media (max-width: 767px) {
     .footer-input-form {
         flex-direction: column;
+        gap: 16px;
     }
 }
 
