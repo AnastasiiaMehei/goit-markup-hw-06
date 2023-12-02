@@ -32,17 +32,22 @@ p, h1, h2, h3 {
     align-items: block;
 }
 .container {
-    max-width: 320px;
+    
     margin: 0 auto;
 }
 @media (max-width: 767px) {
     .container {
        padding: 0px 16px;
+       max-width: 320px;
      }
 }
 @media (min-width: 768px) {
     .container {
        max-width: 768px;
+       padding: 0px 16px;
+    }
+    .container-top {
+        align-items: center;
     }
 }
 @media (min-width: 1158px) {
@@ -132,12 +137,24 @@ p, h1, h2, h3 {
 .address-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+}
+@media (min-width: 1158px) {
+    .address-list {
+        padding: 24px 0;
+    }
 }
 @media (max-width: 767px) {
     .address-list {
         display: none;
     }
+}
+@media (min-width: 768px) {
+    .address-list {
+        display: flex;
+        align-items: center;
+flex-direction: column;  
+gap: 12px
+}
 }
 .contacts-information-links {
     color: #434455;
@@ -147,12 +164,19 @@ p, h1, h2, h3 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    flex-direction: inline;
     padding: 24px 0;
     text-align: center;
     padding-right: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+    }
+    @media (min-width: 768px) {
+        .contacts-information-links {
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.04em;
+            padding: 0;
 
+    }
     }
     .contacts-information-links:hover,
     .contacts-information-links:focus {
@@ -233,6 +257,13 @@ letter-spacing: 0.02em;
     max-width: 288px;
     height: 160px;
     padding: 0;
+    }
+}
+@media (min-width: 768px) {
+    .section-one-tittle {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 36px;
     }
 }
 .section-one-button {
