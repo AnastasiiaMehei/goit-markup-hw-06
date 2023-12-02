@@ -529,18 +529,30 @@ text-align: center;
     background:#2E2F42;
     padding: 100px 0;
 }
+@media (max-width: 767px) {
+    .conclusion {
+        padding: 97.5px 0px;
+    }
+}
 .logo-two {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    text-tranfsform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 16px; 
 } 
+
+@media (max-width: 767px) {
+    .logo-two {
+        display: block;
+        margin: 0 auto;
+}
+}
 .logo-studio-concl {
     font-family: "Raleway", sans-serif;
     color: #f4f4fd;
@@ -557,6 +569,11 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+@media (max-width: 767px) {
+    .conclusion-paragraph {
+        max-width: 288px;
+    }
 }
 
 .social-links {
@@ -610,9 +627,16 @@ text-align: center;
     display: flex;
     align-items: baseline; 
 }
-.foot-info {
-    margin-right: 120px;
+@media (max-width: 767px) {
+    .foot-content  {
+        flex-direction: column;
+    }
 }
+@media (min-width: 1158px) {
+    .foot-info {
+        margin-right: 120px;
+}
+} 
 .social-links-icon {
     fill: #f4f4fd;
 }
