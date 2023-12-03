@@ -42,10 +42,6 @@ p, h1, h2, h3 {
      }
 }
 @media (min-width: 768px) {
-    .container {
-       max-width: 768px;
-       padding: 0px 16px;
-    }
     .container-top {
         align-items: center;
     }
@@ -338,10 +334,12 @@ letter-spacing: 0.02em;
 @media (min-width: 768px) {
     .section-two-tittles {
         font-weight: 700;
- 
+        text-align: start; 
+        font-size: 36px;
+        line-height: 1.11;
 }
 }
-@media (max-width: 1157px) {
+@media (max-width: 767px) {
     .section-two-tittles {
     font-size: 36px;
     line-height: 1.11;
@@ -352,8 +350,20 @@ text-align: center;
     display: flex;
     gap: 24px;
 }
+@media (min-width: 768px) {
+    .section-two-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
 .section-two-list-item {
     width: 100%;
+}
+@media (min-width: 768px) {
+    .section-two-list-item {
+        width: calc((100% - 24px) / 2);
+    }
 }
 @media (min-width: 1158px) {
     .section-two-list-item {
@@ -370,10 +380,7 @@ text-align: center;
         flex-direction: column;
         gap: 72px;
     }
-    .section-two-list-item {
-/* display: block; */
     }
-}
 .section-two-list-item:last-child {
     margin-right: 0;
 }
@@ -420,6 +427,12 @@ text-align: center;
         padding: 96px 0px;
     }
 }
+@media (min-width: 768px) {
+    .section-two-icon {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
 .section-three-tittle {
     color: #2E2F42;
     text-align: center;
@@ -429,6 +442,11 @@ text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px; 
+}
+@media (min-width: 7687px) {
+    .section-three-tittle {
+        margin-bottom: 72px;
+    }
 }
 .section-three-list {
     display: flex;     
@@ -445,12 +463,22 @@ text-align: center;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
+    .section-three-photo {
+        width: calc((100% - 24px) / 2);
+    }
+    
+    .section-three-list {
+        flex-wrap: wrap;
+    }
     .section-three-picture {
         width: 100%;
     }
 }
 @media (max-width: 767px) {
+    .section-three-picture {
+        width: 100%;
+    }
     .section-three-list {
         flex-direction: column;
     }
@@ -488,6 +516,12 @@ text-align: center;
         padding: 96px 0px;
     }
 }
+@media (min-width: 768px) {
+    .section-four {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
 .section-four-list  {
     display: flex;
     flex-wrap: wrap;
@@ -510,18 +544,32 @@ text-align: center;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
+@media (min-width: 768px) {
+    .section-four-tittle {
+        margin-bottom: 72px;
+    }
+}
 .section-four-photo {
     background: #FFF; 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 @media (max-width: 767px) {
     .section-four-photo {
-       width: 100%;
+    width: 100%;
     }
+}
+@media (min-width: 768px) {
+    .section-four-photo {
+    width: calc((100% - 24px) / 2);
+}
+.section-four-list {
+    column-gap: 24px;
+    row-gap: 72px;
+}
 }
 @media (min-width: 1158px) {
     .section-four-photo {
-        width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
     }
 }
 .section-four-photo:hover {
@@ -584,17 +632,24 @@ text-align: center;
         padding: 97.5px 0px;
     }
 }
+@media (min-width: 768px) {
+    .conclusion {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
 .logo-two {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-tranfsform: uppercase;
+    text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 16px; 
+
 } 
 
 @media (max-width: 767px) {
@@ -692,6 +747,20 @@ text-align: center;
         align-items: baseline; 
 }
 } 
+@media (min-width: 768px) {
+    .foot-content {
+    /* padding-left: 108px;
+    padding-right: 164px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 584px;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+    
+}
+} 
 @media (max-width: 767px) {
     .foot-content  {
         display: flex;
@@ -699,8 +768,6 @@ text-align: center;
         align-content: center;
         gap: 72px;
     }
-}
-@media (max-width: 767px) {
     .foot-info {
         text-align: center;
     }
