@@ -1196,9 +1196,10 @@ a {     text-decoration: none;
 }
 
 
-@media (min-device-pixel-ratio: 2),
+@media screen and
 (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+(min-resolution: 2dppx),
+(min-device-pixel-ratio: 2) {
     @media (max-width: 767px) {
         .section-one { 
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), 
